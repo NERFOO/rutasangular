@@ -2,6 +2,7 @@ import { CineComponent } from "./components/cine/cine.component";
 import { HomeComponent } from "./components/home/home.component";
 import { MusicaComponent } from "./components/musica/musica.component";
 import { Error404Component } from "./components/error404/error404.component";
+import { NumerodobleComponent } from "./components/numerodoble/numerodoble.component";
 
 //MODULOS PARA ROUTING
 import { Routes, RouterModule } from "@angular/router";
@@ -12,6 +13,8 @@ const appRoutes : Routes = [
     {path: "" , component : HomeComponent},
     {path: "cine" , component : CineComponent},
     {path: "musica" , component : MusicaComponent},
+    {path: "numerodoble/:num" , component : NumerodobleComponent},
+    {path: "numerodoble" , component : NumerodobleComponent},
     {path: "**" , component : Error404Component},
 ]
 

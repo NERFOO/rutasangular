@@ -8,6 +8,7 @@ import { CineComponent } from './components/cine/cine.component';
 import { MusicaComponent } from './components/musica/musica.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { Error404Component } from './components/error404/error404.component';
+import { NumerodobleComponent } from './components/numerodoble/numerodoble.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Error404Component } from './components/error404/error404.component';
     CineComponent,
     MusicaComponent,
     MenuComponent,
-    Error404Component
+    Error404Component,
+    NumerodobleComponent
   ],
   imports: [
     BrowserModule, routing
