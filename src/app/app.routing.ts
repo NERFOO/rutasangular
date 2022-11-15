@@ -7,6 +7,7 @@ import { NumerodobleComponent } from "./components/numerodoble/numerodoble.compo
 //MODULOS PARA ROUTING
 import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from '@angular/core';
+import { CollatzComponent } from "./components/collatz/collatz.component";
 
 //ARRAY DE OBJETO Routes
 const appRoutes : Routes = [
@@ -15,6 +16,7 @@ const appRoutes : Routes = [
     {path: "musica" , component : MusicaComponent},
     {path: "numerodoble/:num" , component : NumerodobleComponent},
     {path: "numerodoble" , component : NumerodobleComponent},
+    {path: "collatz/:num" , component : CollatzComponent},
     {path: "**" , component : Error404Component},
 ]
 

@@ -1,0 +1,7 @@
+<div>
+    <h1>Menu collatz</h1>
+    <div *ngFor="let num of numerosRandom" style="display: inline;">
+        <a [routerLink]="['/collatz', num]" style="padding: 25px 25px; border: 1px solid black">{{num}}</a>
+    </div>
+    <br/><br/><br/>
+</div>
